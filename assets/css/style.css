@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Cabin', 'Lobster', 'Open Sans', sans-serif;
+}
+
+.cabin-regular {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.cabin-bold {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo {
+    font-size: 2.5rem;
+}
+#contacto{
+    background-color: #DC3545;
+}
+#contactop{
+    font-size: 1.5rem;
+}
+#contacto p{
+    font-size: 1rem;
+}
+nav,
+footer {
+    background-color: #373A3C;
+}
+
+.navbar .logo {
+    font-family: 'Lobster', 'Open Sans', sans-serif;
+}
+
+.separador {
+    border-bottom: 1px solid #000;
+}
+.carousel-indicators{
+    margin-bottom: -36px;
+}
+.carousel-indicators .to-round-off {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #373A3C31 !important;
+    border: 2px solid #373A3C31 !important;
+    border-radius: 50% !important;
+}
+
+.carousel-indicators .to-round-off.active {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #373A3C !important;
+    border: 2px solid #373A3C !important;
+    border-radius: 50% !important;
+}
+
+.collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+  
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+  }
+.no-bullet{
+    list-style-type: none;
+}
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+}
+  /*
+Alto mínimo del card-img-top según resolución
+*/
+@media (min-width: 1200px) {
+    .card .card-body {
+        min-height: 172px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card .card-body{
+        min-height: 194px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card .card-body{
+        min-height: 244px;
+    }
+}
