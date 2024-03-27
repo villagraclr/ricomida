@@ -4,7 +4,6 @@ body {
     padding: 0;
     font-family: 'Cabin', 'Lobster', 'Open Sans', sans-serif;
 }
-
 .cabin-regular {
     font-family: "Cabin", sans-serif;
     font-optical-sizing: auto;
@@ -32,27 +31,34 @@ body {
 .titulo {
     font-size: 2.5rem;
 }
-.font-size-1rem{
+
+.font-size-1rem {
     font-size: 1rem;
 }
-.btn-custom{
+
+.btn-custom {
     --bs-btn-color: #373A3C !important;
     --bs-btn-border-color: #DDDDDD !important;
 }
-.btn-custom:hover{
+
+.btn-custom:hover {
     font-size: 1rem;
     --bs-btn-color: #373A3C !important;
     --bs-btn-border-color: #DDDDDD !important;
 }
-#contacto{
+
+#contacto {
     background-color: #DC3545;
 }
-#contacto p{
+
+#contacto p {
     font-size: 1.5rem;
 }
-#contacto p{
+
+#contacto p {
     font-size: 1rem;
 }
+
 nav,
 footer {
     background-color: #373A3C;
@@ -65,9 +71,11 @@ footer {
 .separador {
     border-bottom: 1px solid #000;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     margin-bottom: -36px;
 }
+
 .carousel-indicators .to-round-off {
     width: 10px !important;
     height: 10px !important;
@@ -86,39 +94,101 @@ footer {
 
 .collapse {
     &:not(.show) {
-      display: none;
+        display: none;
     }
-  }
-  
-  .collapsing {
+}
+.collapsing {
     height: 0;
     overflow: hidden;
     @include transition($transition-collapse);
-  }
-.no-bullet{
+}
+
+.no-bullet {
     list-style-type: none;
 }
-.logo{
+.no-bullet > li:before {
+
+    content: attr(seq) "";
+
+  }
+.logo {
     font-size: 2rem;
     text-decoration: none;
 }
-  /*
+/*
 Alto mínimo del card-img-top según resolución
 */
 @media (min-width: 1200px) {
     .card .card-body {
         min-height: 172px;
     }
+
+    .titulo,
+    .tiempo,
+    .to-fix-button {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .btn-custom {
+        padding-left: 20pxs;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .card .card-body{
+    .card .card-body {
         min-height: 194px;
+    }
+
+    .titulo,
+    .tiempo {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .titulo {
+        font-size: 3rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .card .card-body{
+    .card .card-body {
         min-height: 244px;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .titulo,
+    .tiempo {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .titulo,
+    .tiempo {
+        text-align: center;
+    }
+    .to-fix-button {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .titulo,
+    .tiempo {
+        text-align: center;
+    }
+
+    .to-fix-button {
+        text-align: center;
     }
 }
